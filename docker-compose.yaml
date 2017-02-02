@@ -1,0 +1,26 @@
+version: '2'
+services:
+  cassandra:
+    image: cassandra:3.9
+    volumes:
+     - "/var/lib/cassandra"
+    ports:
+    - "9042:9042"
+    restart: always
+  iothub2cassandra_service:
+    image: toketi/iothub-to-cassandra:latest
+    depends_on:
+    - cassandra
+    environment:
+     CONFIG_URL: "https://raw.githubusercontent.com/Azure/toketi-iothub-to-cassandra/master/docker_compose_config_demo.conf"
+     #CONFIG_FILE: "conf file accessible from the container"
+     IOTHUB_EVENTHUB_NAME: "${IOTHUB_EVENTHUB_NAME}"
+     IOTHUB_EVENTHUB_ENDPOINT: "${IOTHUB_EVENTHUB_ENDPOINT}"
+     IOTHUB_EVENTHUB_PARTITIONS: "${IOTHUB_EVENTHUB_PARTITIONS}"
+     IOTHUB_ACCESS_POLICY: "${IOTHUB_ACCESS_POLICY}"
+     IOTHUB_ACCESS_KEY: "${IOTHUB_ACCESS_KEY}"
+    links:
+     - cassandra
+    ports:
+     - "9000:9000"
+    restart: always

@@ -1,0 +1,25 @@
+{
+  "table": "temperatures",
+  "keyspace": "mykeyspace",
+  "contentType": "json",
+  "columns": [
+    {
+      "source": "Received",
+      "name": "time",
+      "type": "timestamp",
+      "key": "Partition"
+    },
+    {
+      "source": "DeviceId",
+      "name": "device",
+      "type": "text",
+      "key": "Partition"
+    },
+    {
+      "source": "Content",
+      "sourcePath": "value",
+      "name": "value",
+      "type": "double"
+    }
+  ]
+}

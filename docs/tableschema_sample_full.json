@@ -1,0 +1,63 @@
+{
+  "table": "data",
+  "keyspace": "mykeyspace",
+  "contentType": "json",
+  "filters": {
+    "messageType": "temperature",
+    "deviceId": "device1001"
+  },
+  "columns": [
+    {
+      "source": "MessageType",
+      "name": "messageType",
+      "type": "text",
+      "key": "Partition"
+    },
+    {
+      "source": "Received",
+      "name": "time",
+      "type": "timestamp",
+      "key": "Clustering"
+    },
+    {
+      "source": "DeviceId",
+      "name": "device",
+      "type": "text",
+      "key": "Clustering"
+    },
+    {
+      "source": "MessageId",
+      "name": "id",
+      "type": "text"
+    },
+    {
+      "source": "Content",
+      "name": "content",
+      "type": "text"
+    },
+    {
+      "source": "Content",
+      "sourcePath": "value",
+      "name": "value",
+      "type": "double"
+    },
+    {
+      "source": "Content",
+      "sourcePath": "location",
+      "name": "location",
+      "type": "tuple<double, double>"
+    },
+    {
+      "source": "Content",
+      "sourcePath": "tags",
+      "name": "tags",
+      "type": "list<text>"
+    },
+    {
+      "source": "Properties",
+      "sourcePath": "time",
+      "name": "devicetime",
+      "type": "timestamp"
+    }
+  ]
+}

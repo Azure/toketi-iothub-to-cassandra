@@ -1,0 +1,23 @@
+{
+  "table": "time_delta",
+  "keyspace": "mykeyspace",
+  "columns": [
+    {
+      "source": "DeviceId",
+      "name": "device",
+      "type": "text",
+      "key": "Partition"
+    },
+    {
+      "source": "Properties",
+      "sourcePath": "time",
+      "name": "sent_time",
+      "type": "timestamp"
+    },
+    {
+      "source": "Received",
+      "name": "receive_time",
+      "type": "timestamp"
+    }
+  ]
+}

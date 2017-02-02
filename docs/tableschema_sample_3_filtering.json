@@ -1,0 +1,38 @@
+{
+  "table": "temperature",
+  "keyspace": "mykeyspace",
+  "filters": {
+    "messageType": "temperature"
+  },
+  "columns": [
+    {
+      "source": "MessageType",
+      "name": "messageType",
+      "type": "text",
+      "key": "Partition"
+    },
+    {
+      "source": "MessageId",
+      "name": "id",
+      "type": "text",
+      "key": "Partition"
+    },
+    {
+      "source": "Received",
+      "name": "time",
+      "type": "timestamp",
+      "key": "Clustering"
+    },
+    {
+      "source": "DeviceId",
+      "name": "device",
+      "type": "text",
+      "key": "Clustering"
+    },
+    {
+      "source": "Content",
+      "name": "content",
+      "type": "text"
+    }
+  ]
+}

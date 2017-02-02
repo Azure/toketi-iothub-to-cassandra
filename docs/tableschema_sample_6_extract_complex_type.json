@@ -1,0 +1,19 @@
+{
+  "table": "coordinates",
+  "keyspace": "mykeyspace",
+  "contentType": "json",
+  "columns": [
+    {
+      "source": "DeviceId",
+      "name": "device",
+      "type": "text",
+      "key": "Partition"
+    },
+    {
+      "source": "Content",
+      "sourcePath": "location",
+      "name": "location",
+      "type": "tuple<double, double>"
+    }
+  ]
+}
