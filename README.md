@@ -1,6 +1,6 @@
-# Azure IoTHub to Cassandra Service
+# Azure IoTHub to Cassandra connector
 
-*Azure IoTHub to Cassandra* is a service that allows to transfer data in real time, **from
+*Azure IoTHub to Cassandra* is a connector that allows to transfer data in real time, **from
 [Azure IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/) to 
 [Apache Cassandra](http://cassandra.apache.org/)**. Every message sent from a device connected to 
 Azure IoT Hub, is automatically copied into one or more Cassandra tables. 
@@ -17,7 +17,7 @@ in keyspaces and tables.
 IoT messages. Messages can be filtered and mapped to **multiple keyspaces and tables**. New tables
 can be added through the configuration, or at runtime using the included web service.
 
-# How to test the service in 5 minutes
+# How to test the connector in 5 minutes
 
 1. [Install Docker](https://docs.docker.com/engine/installation/)
 2. [Create an Azure IoT Hub](https://ms.portal.azure.com/#create/Microsoft.IotHub)
@@ -28,7 +28,7 @@ can be added through the configuration, or at runtime using the included web ser
 6. Run `docker-compose up`
 
 The last command will download the Docker image publicly available [on Docker Hub]
-(https://hub.docker.com/r/toketi/iothub-to-cassandra) and start the service, logging events on the 
+(https://hub.docker.com/r/toketi/iothub-to-cassandra) and start the connector, logging events on the 
 console.
 
 You should have now 2 containers running. Cassandra tables can be queried on port 9042, and 
@@ -47,7 +47,7 @@ To change the configuration used by Docker Compose, you can edit
 [docker_compose_config_demo.conf](docker_compose_config_demo.conf), which is referenced in 
 [docker-compose.yaml](docker-compose.yaml).
 
-# Running the service
+# Running the connector
 
 Before running the service, make sure to prepare 
 
