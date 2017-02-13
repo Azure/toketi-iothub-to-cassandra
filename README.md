@@ -58,7 +58,7 @@ Before running the service, make sure to prepare
    configuration file included in the repository references the environment variables set in the 
    previous step).
 
-The following Azure IoT Hub documentation will help creating thue hub and find the connection settings:
+The following Azure IoT Hub documentation will help creating the hub and find the connection settings:
 
 * [Create an IoT hub using the Azure portal: Endpoints](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#endpoints)
 * [Get started with Azure IoT Hub (Java)](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-java-java-getstarted)
@@ -233,7 +233,7 @@ is not always possible or desired. *IoTHub to Cassandra* includes a **web servic
 **add new table configurations at runtime**, without the need to restart.
 
 The syntax used by the web service is equivalent to the one used in the configuration file seen above.
-In fact you can copy and paste a table definition, from the configuration file to the webservice, 
+In fact, you can copy and paste a table definition, from the configuration file to the webservice, 
 and viceversa.
 
 Here's an example of how to add the same `full_log` table seen above, using the web service:
