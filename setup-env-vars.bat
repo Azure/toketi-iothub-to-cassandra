@@ -15,7 +15,7 @@
 ::
 ::  SET IOTHUB_EVENTHUB_PARTITIONS = 4
 ::
-::  SET IOTHUB_IOTHUB_ACCESS_POLICY = "service"
+::  SET IOTHUB_ACCESS_POLICY = "service"
 ::
 ::  SET IOTHUB_ACCESS_KEY = "6XdNOP12341f+N3uOdEFgKabcdbZZk1K//T2jFabcN4="
 ::
@@ -30,7 +30,7 @@ SET IOTHUB_EVENTHUB_ENDPOINT = ""
 SET IOTHUB_EVENTHUB_PARTITIONS = ""
 
 :: see: Shared access policies, we suggest to use "service" here
-SET IOTHUB_IOTHUB_ACCESS_POLICY = ""
+SET IOTHUB_ACCESS_POLICY = ""
 
 :: see: Shared access policies ⇒ key name ⇒ Primary key
 SET IOTHUB_ACCESS_KEY = ""

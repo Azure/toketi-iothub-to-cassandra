@@ -15,7 +15,7 @@
 #
 #  $env:IOTHUB_EVENTHUB_PARTITIONS = 4
 #
-#  $env:IOTHUB_IOTHUB_ACCESS_POLICY = 'service'
+#  $env:IOTHUB_ACCESS_POLICY = 'service'
 #
 #  $env:IOTHUB_ACCESS_KEY = '6XdNOP12341f+N3uOdEFgKabcdbZZk1K//T2jFabcN4='
 #
@@ -30,7 +30,7 @@ $env:IOTHUB_EVENTHUB_ENDPOINT = ''
 $env:IOTHUB_EVENTHUB_PARTITIONS = ''
 
 # see: Shared access policies, we suggest to use "service" here
-$env:IOTHUB_IOTHUB_ACCESS_POLICY = ''
+$env:IOTHUB_ACCESS_POLICY = ''
 
 # see: Shared access policies ⇒ key name ⇒ Primary key
 $env:IOTHUB_ACCESS_KEY = ''
